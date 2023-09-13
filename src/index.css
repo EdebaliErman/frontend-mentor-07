@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    html,
+    body {
+        @apply w-full m-0 bg-bg
+    }
+}
+
+@layer components {
+    .App {
+        @apply m-32 mt-36 flex justify-center items-center flex-wrap sm:m-3
+    }
+
+    .card {
+        @apply flex flex-col justify-start justify-start   h-[680px] w-[408px] gap-16  p-12
+    }
+    .card svg {
+        @apply  text-end
+    }
+    .card h1 {
+        @apply text-5xl text-text font-mono font-bold tracking-[-0.2rem] opacity-90 
+    }
+
+    .card p {
+        @apply opacity-40 text-2xl  mt-[-2rem]  text-text   
+    }
+    .card button{
+        @apply m-3 mr-20 p-5 mt-20 rounded-full text-2xl  hover:text-text bg-bg hover:bg-transtparan hover:border-4 
+        sm:m-0
+    }
+}
